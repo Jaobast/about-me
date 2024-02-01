@@ -1,4 +1,8 @@
+html{
+  height: -webkit-fill-available;
+}
 body {
+    height: -webkit-fill-available;
     font-family: "Arial", sans-serif;
     background: linear-gradient(to top, rgb(241, 170, 226), rgb(193, 240, 193));
     height: 100vh;
