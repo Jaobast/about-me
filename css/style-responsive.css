@@ -46,3 +46,10 @@
     margin-bottom: 50px;
   }
 }
+
+@media (min-width: 1050px){
+  button:hover{
+    background-color: rgb(231, 128, 192);
+    color: rgb(255, 255, 255);
+  }
+}
