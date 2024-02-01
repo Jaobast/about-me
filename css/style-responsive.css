@@ -1,9 +1,9 @@
 @media (max-width: 1000px){
   body {
     height: -webkit-fill-available;
-    background-image: url(https://i.pinimg.com/564x/cb/26/08/cb26083dd5cf64b36a22fd710edc78d1.jpg);
-    background-size: 120%;
-    background-position: 30% 0%;
+    background-image: url('../img/aboutMe_01.jpg');
+    background-size: cover;
+    background-position: 20% 0%;
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
