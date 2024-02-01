@@ -4,12 +4,17 @@ html{
 body {
     height: -webkit-fill-available;
     font-family: "Arial", sans-serif;
-    background: linear-gradient(to top, rgb(241, 170, 226), rgb(193, 240, 193));
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+
+  #img{
+  background-repeat: no-repeat;
+  z-index: -10;
+  position: absolute;
   }
   
   .container {

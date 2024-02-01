@@ -12,25 +12,38 @@ const choicesArray = [
   ["1.73m", "1.74m", "1.75m", "1.76m"]
 ];
 const correctAnswers = ["02.11.1997", "Mario", "Ribeiro", "Wolverine", "1.74m"];
+
+const backgroundImg = [
+  "./img/aboutMe_01.jpg",
+  "./img/aboutMe_02.jpg",
+  "./img/aboutMe_03.jpg",
+  "./img/aboutMe_04.jpg",
+  "./img/aboutMe_05.jpg"
+];
 let currentQuestionIndex = 0;
 let score = 0;
 
 function displayQuestion() {
   if (currentQuestionIndex < questions.length) {
-    document.getElementById('question').innerHTML = questions[
-      currentQuestionIndex];
+    document.getElementById('question').innerHTML = questions[currentQuestionIndex];
+
     for (let i = 0; i < 4; i++) {
-    const btn = document.getElementById(`choice${i+1}`);
-    btn.innerHTML = choicesArray[currentQuestionIndex][i];
-    btn.value = choicesArray[currentQuestionIndex][i];
-  }
-    } else {
+      const btn = document.getElementById(`choice${i+1}`);
+      btn.innerHTML = choicesArray[currentQuestionIndex][i];
+      btn.value = choicesArray[currentQuestionIndex][i];
+    }
+
+    // Apenas altere a imagem de fundo uma vez, fora do loop
+    const novaImagem = backgroundImg[currentQuestionIndex];
+    document.getElementById('img').src= novaImagem;
+  } else {
     document.getElementById('result').innerHTML =
       `You scored ${score} out of ${questions.length}!`;
-      document.getElementById('question').innerHTML = "";
-      document.getElementById('choices').innerHTML = "";
+    document.getElementById('question').innerHTML = "";
+    document.getElementById('choices').innerHTML = "";
   }
 }
+
 
 function checkAnswer(button) {
   if (button.value === correctAnswers[currentQuestionIndex]) {
