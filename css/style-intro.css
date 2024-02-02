@@ -5,6 +5,7 @@ html{
 
 body{
     height: 100vh;
+    height: -webkit-fill-available;
     width: 100vw;
     background-image: url("../img/intro.jpg");
     background-repeat: no-repeat;
