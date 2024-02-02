@@ -1,5 +1,6 @@
 html{
   height: -webkit-fill-available;
+  background-color: rgb(0, 0, 0);
 }
 body {
     height: -webkit-fill-available;
@@ -15,7 +16,7 @@ body {
   width: 100vw;
   object-fit: cover;
   background-repeat: no-repeat;
-  z-index: -10; 
+  z-index: -10;
   position: absolute;
   }
   
