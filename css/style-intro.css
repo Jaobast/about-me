@@ -46,3 +46,55 @@ a{
     background-color: white;
     color: rgb(113, 188, 226);
 }
+
+/* GIF GIF GIF GIF GIF GIF */
+.gif{
+    position: relative;
+    height: 20vh;
+    width: 100vw;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0%;
+}
+
+@keyframes port{
+    0%{ opacity: 100%;}
+    32%{opacity: 100%;}
+    33%{opacity: 0%;}
+    100%{opacity: 0%;}
+}
+
+@keyframes deut{
+    33%{opacity: 100%;}
+    65%{opacity: 100%;}
+    66%{opacity: 0%;}
+    32%{opacity: 0%;}
+}
+
+@keyframes engl{
+    66%{opacity: 100%;}
+    99%{opacity: 100%;}
+    100%{opacity: 0%;}
+    65%{opacity: 0%;}
+}
+
+.pt{
+    animation: port 4s infinite;
+}
+
+.de{
+    animation: deut 4s infinite;
+}
+
+.en{
+    animation: engl 4s infinite;
+}
+/* GIF GIF GIF GIF GIF GIF */
