@@ -14,11 +14,11 @@ const choicesArray = [
 const correctAnswers = ["02.11.1997", "Mario", "Ribeiro", "Wolverine", "1.74m"];
 
 const backgroundImg = [
-  "./img/illustration_01.png",
-  "./img/aboutMe_02.jpg",
-  "./img/aboutMe_03.jpg",
-  "./img/aboutMe_04.jpg",
-  "./img/aboutMe_05.jpg"
+  "../img/illustration_01.png",
+  "../img/aboutMe_02.j",
+  "../img/aboutMe_03.g",
+  "../img/aboutMe_04.jg",
+  "../img/aboutMe_05.jp"
 ];
 let currentQuestionIndex = 0;
 let score = 0;

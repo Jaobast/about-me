@@ -1,0 +1,17 @@
+:root{
+    /* COLOR COLOR COLOR */
+    --blue: #247dce;
+    --yellow: #edb713;
+    --fredokaBold: 'Fredoka Bold';
+    --fredoka: 'Fredoka';
+}
+
+@font-face {
+    font-family: 'Fredoka Bold';
+    src: url(../fonts/Fredoka-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url(../fonts/Fredoka-Regular.ttf);
+}

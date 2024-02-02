@@ -1,53 +1,77 @@
-:root{
-  --blue: #247dce;
-  --yellow: #edb713;
-}
 html{
   height: -webkit-fill-available;
   background-color: var(--blue);
 }
 body {
-    height: -webkit-fill-available;
-    font-family: "Arial", sans-serif;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  #img{
-  width: 100vw;
+  height: -webkit-fill-available;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  color: white;
+  font-family: var(--fredoka);
+}
+
+#img{
+  width: 100vw;
+  height: auto;
   object-fit: cover;
   background-repeat: no-repeat;
   z-index: -10;
   position: absolute;
-  }
-  
-  .container {
-    background-color: rgba(255, 255, 255, 0.217);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-  }
-  
-  button{
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 10px;
-    background-color: white;
-    border: none;
-    color: var(--blue);
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  #result{
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(126, 126, 126);
-    margin-top: 20px;
-  }
+}
+
+h1{
+  position: absolute;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--fredoka);
+  font-size: 70px;
+  width: 100%;
+}
+
+#question{
+  font-size: 40px;
+}
+
+#choices{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.217);
+  width: 100vw;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 50px 50px 0px 0px;
+  position: absolute;
+  bottom: 0;
+}
+
+button{
+  width: 70vw;
+  padding: 20px;
+  margin: 20px 0px;
+  border-radius: 50px;
+  background-color: white;
+  border: none;
+  color: var(--blue);
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#result{
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(126, 126, 126);
+  margin-top: 20px;
+}
