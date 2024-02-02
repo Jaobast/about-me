@@ -16,7 +16,7 @@ body {
 
 #img{
   width: 100vw;
-  height: auto;
+  height: 100vh;
   object-fit: cover;
   background-repeat: no-repeat;
   z-index: -10;
