@@ -4,7 +4,7 @@ html{
 }
 body {
   height: -webkit-fill-available;
-  height: 100vh;
+  max-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,9 +15,7 @@ body {
 }
 
 #img{
-  height: -webkit-fill-available;
   width: 100vw;
-  height: 100vh;
   object-fit: cover;
   background-repeat: no-repeat;
   z-index: -10;
