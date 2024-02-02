@@ -1,11 +1,6 @@
-:root {
-  /* Colors */
-  --background: rgb(104, 174, 235);
-}  
-
 html{
   height: -webkit-fill-available;
-  background-color: var(--background);
+  background-color: rgb(0, 0, 0);
 }
 body {
     height: -webkit-fill-available;
@@ -15,4 +10,40 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+
+  #img{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  z-index: -10;
+  position: absolute;
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.217);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  button{
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: rgb(211, 236, 211);
+    border: none;
+    color: rgb(126, 126, 126);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #result{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(126, 126, 126);
+    margin-top: 20px;
   }
