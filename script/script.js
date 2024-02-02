@@ -14,7 +14,7 @@ const choicesArray = [
 const correctAnswers = ["02.11.1997", "Mario", "Ribeiro", "Wolverine", "1.74m"];
 
 const backgroundImg = [
-  "./img/aboutMe_01.jpg",
+  "./img/illustration_01.png",
   "./img/aboutMe_02.jpg",
   "./img/aboutMe_03.jpg",
   "./img/aboutMe_04.jpg",
