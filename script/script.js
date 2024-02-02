@@ -33,7 +33,7 @@ function displayQuestion() {
       btn.value = choicesArray[currentQuestionIndex][i];
     }
 
-    // Apenas altere a imagem de fundo uma vez, fora do loop
+    
     const novaImagem = backgroundImg[currentQuestionIndex];
     document.getElementById('img').src= novaImagem;
   } else {
