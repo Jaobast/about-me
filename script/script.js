@@ -1,5 +1,5 @@
-const questions = ["Em qual dia de novembro o seu escorpião favorito nasceu?",
-  "E ele tem Pai... Qual o nome do pincel dessa obra de arte?",
+const questions = ["Qual a data do meu aniversário?",
+  "Qual o nome do pincel dessa obra de arte?",
   "Qual o meu quinto sobrenome?",
   "Qual o meu super heroi favorito?",
   "Qual a minha altura?"
