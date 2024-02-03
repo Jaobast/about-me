@@ -82,3 +82,38 @@
     animation: roupaTwo 8s forwards;
     z-index: 10;
 }
+
+@keyframes pc{
+    0%{opacity: 100%;}
+    29%{opacity: 100%;}
+    30%{opacity: 0%;}
+    100%{opacity: 0%;}
+}
+
+#question01 .pc{
+    animation: pc 8s forwards;
+}
+
+@keyframes papa{
+    0%{opacity: 0%;}
+    59%{opacity: 0%;}
+    60%{opacity: 100%;}
+    100%{opacity: 100%;}
+}
+
+#question02 .papa{
+    animation: papa 8s forwards;
+    z-index: 11;
+}
+
+@keyframes bag{
+    0%{opacity: 100%;}
+    69%{opacity: 100%;}
+    70%{opacity: 0%;}
+    100%{opacity: 0%;}
+}
+
+#question01 .bag{
+    animation: bag 8s forwards;
+    z-index: 11;
+}
