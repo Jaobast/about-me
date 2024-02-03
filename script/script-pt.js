@@ -17,7 +17,7 @@ const backgroundImg = [
   "../img/illustration_01.png",
   "../img/aboutMe_02.j",
   "../img/aboutMe_03.g",
-  "../img/aboutMe_04.jg",
+  "../img/illustration_04.png",
   "../img/aboutMe_05.jp"
 ];
 let currentQuestionIndex = 0;
