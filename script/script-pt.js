@@ -36,6 +36,13 @@ function displayQuestion() {
     
     const novaImagem = backgroundImg[currentQuestionIndex];
     document.getElementById('img').src= novaImagem;
+
+    if (document.getElementById('img').src.endsWith("img/illustration_04.png")) {
+      document.getElementById("superhero").classList.remove("hidden");
+    }
+    else{
+      document.getElementById("superhero").classList.add("hidden");
+    }
   } else {
     document.getElementById('result').innerHTML =
       `You scored ${score} out of ${questions.length}!`;
