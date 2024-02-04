@@ -15,8 +15,8 @@ const correctAnswers = ["02.11.1997", "Mario", "Ribeiro", "Wolverine", "1.74m"];
 
 const backgroundImg = [
   "../img/illustration_01.png",
-  "../img/aboutMe_02.j",
-  "../img/aboutMe_03.g",
+  "../img/illustration_02.png",
+  "../img/aboutMe_03.jp",
   "../img/illustration_04.png",
   "../img/aboutMe_05.jp"
 ];
@@ -37,12 +37,34 @@ function displayQuestion() {
     const novaImagem = backgroundImg[currentQuestionIndex];
     document.getElementById('img').src= novaImagem;
 
+    /* 01 01 01 01 01 01 */
+    if (document.getElementById('img').src.endsWith("img/illustration_01.png")) {
+      document.getElementById("question00").classList.remove("hidden");
+    }
+    else{
+      document.getElementById("question00").classList.add("hidden");
+    }
+
+    /* 02 02 02 02 02 02 */
+    if (document.getElementById('img').src.endsWith("img/illustration_02.png")) {
+      document.getElementById("question01").classList.remove("hidden");
+      document.getElementById("question02").classList.remove("hidden");
+    }
+    else{
+      /* document.getElementById("question01").classList.add("hidden"); */
+      document.getElementById("question01").classList.add("hidden");
+      document.getElementById("question02").classList.add("hidden");
+    }
+    
+    /* 04 04 04 04 04 04 */
     if (document.getElementById('img').src.endsWith("img/illustration_04.png")) {
       document.getElementById("superhero").classList.remove("hidden");
     }
     else{
       document.getElementById("superhero").classList.add("hidden");
     }
+
+
   } else {
     document.getElementById('result').innerHTML =
       `You scored ${score} out of ${questions.length}!`;
