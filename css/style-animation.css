@@ -8,13 +8,12 @@
 @keyframes faceOne{
     0%{opacity: 100%;}
     9%{opacity: 100%;}
-    10%{opacity: 0%;}
+    20%{opacity: 0%;}
     100%{opacity: 0%;}
 }
 @keyframes faceTwo{
     0%{opacity: 0%;}
-    9%{opacity: 0%;}
-    10%{opacity: 100%;}
+    20%{opacity: 100%;}
     100%{opacity: 100%;}
 }
 
@@ -39,6 +38,25 @@
     animation: big 8s forwards;
 }
 
+@keyframes explodeOne{
+    28%{transform: rotate(0deg);}
+    29%{transform: rotate(-1deg);}
+    30%{transform: rotate(1deg);}
+    31%{transform: rotate(-1deg);}
+    33%{transform: rotate(1deg);}
+    33%{transform: rotate(-1deg);}
+    34%{transform: rotate(1deg);}
+    35%{transform: rotate(-1deg);}
+    36%{transform: rotate(1deg);}
+    37%{transform: rotate(0deg) scale(1);}
+    39%{transform: scale(1.3) translate(0px, 100px);}
+}
+
+@keyframes explodeTwo{
+    39%{transform: scale(1.3) translate(0px, 100px);}
+    41%{transform: scale(1);}
+}
+
 @keyframes capOne{
     0%{opacity: 100%;}
     39%{opacity: 100%;}
@@ -53,12 +71,12 @@
 }
 
 #question01 .cap{
-    animation: capOne 8s forwards;
+    animation: capOne 8s forwards, explodeOne 8s linear;
     z-index: 10;
 }
 
 #question02 .cap{
-    animation: capTwo 8s forwards;
+    animation: capTwo 8s forwards, explodeTwo 8s linear;
     z-index: 10;
 }
 
