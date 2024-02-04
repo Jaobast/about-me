@@ -22,19 +22,6 @@ p{
   display: none;
 }
 
-#superhero{
-  width: 100vw;
-  animation: fly 1s ease-in;
-}
-
-@keyframes fly{
-  0% {transform: scale(0);}
-  20% {transform: scale(0) translateY(50%);}
-  80% {transform: scale(1);}
-  90% {transform: scale(0.95);}
-  100% {transform: scale(1);}
-}
-
 #img{
   width: 100vw;
   object-fit: cover;
